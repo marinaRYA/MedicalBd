@@ -1,0 +1,31 @@
+﻿<Window x:Class="PresenterLibrary.ChoiceUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresenterLibrary"
+        mc:Ignorable="d"
+        Title="ChoiceUser" Height="100" Width="400">
+    <Grid Margin="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Label -->
+        <Label Content="Пользователь:" Grid.Column="0" Margin="5"/>
+
+        <!-- ComboBox -->
+        <ComboBox x:Name="ProfileComboBox" Grid.Column="1" Margin="5"/>
+
+        <!-- Button -->
+        <Button x:Name="SaveButton" Content="Выбрать" Width="75" Margin="5,5,5,3" 
+            Grid.Column="2" Click="SaveButton_Click"/>
+    </Grid>
+
+</Window>

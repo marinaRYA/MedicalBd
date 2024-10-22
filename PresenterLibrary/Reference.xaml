@@ -1,0 +1,78 @@
+﻿<Window x:Class="PresenterLibrary.Reference"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresenterLibrary"
+        mc:Ignorable="d"
+        Title="Информация о разделах" Height="651" Width="550">
+    <Grid>
+        <TreeView>
+            <!-- Раздел "Разное" -->
+            <TreeViewItem Header="Раздел 'Разное' содержит следующие подразделы:" IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Настройка'"/>
+                <TreeViewItem Header="Подраздел 'Сменить пароль'"/>
+            </TreeViewItem>
+
+            <!-- Раздел "О программе" -->
+            <TreeViewItem Header="Раздел 'Содержание' содержит следующие подразделы:" IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Справка'"/>
+                <TreeViewItem Header="Подраздел 'О программе'"/>
+            </TreeViewItem>
+            <!-- Раздел "Документы" -->
+            <TreeViewItem Header="Раздел 'Документы' содержит следующие подразделы: " IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Профили лабораторий'"/>
+                <TreeViewItem Header="Подраздел 'Специализации'"/>
+                <TreeViewItem Header="Подраздел 'Лаборатории'"/>
+                <TreeViewItem Header="Подраздел 'Операции'"/>
+                <TreeViewItem Header="Подраздел 'Назначения'"/>
+                <TreeViewItem Header="Подраздел 'Пациенты'"/>
+                <TreeViewItem Header="Подраздел 'Медицинское учреждение'"/>
+                <TreeViewItem Header="Подраздел 'Корпуса'"/>
+                <TreeViewItem Header="Подраздел 'Отделения'"/>
+                <TreeViewItem Header="Подраздел 'Палаты'"/>
+                <TreeViewItem Header="Подраздел 'Доктора'"/>
+                <TreeViewItem Header="Подраздел 'Персонал'"/>
+                <TreeViewItem Header="Подраздел 'Учёт'"/>
+
+            </TreeViewItem>
+
+            <!-- Раздел "Справочники" -->
+            <TreeViewItem Header="Раздел 'Справочники' содержит следующие подразделы:" IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Профили лабораторий'"/>
+                <TreeViewItem Header="Подраздел 'Специализации'"/>
+            </TreeViewItem>
+
+            <!-- Раздел "Лаборатории" -->
+            <TreeViewItem Header="Раздел 'Лаборатории'" IsExpanded="True">
+              
+            </TreeViewItem>
+
+            <!-- Раздел "Лечение" -->
+            <TreeViewItem Header="Раздел 'Лечение' содержит следующие подразделы:" IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Операции'"/>
+                <TreeViewItem Header="Подраздел 'Назначения'"/>
+            </TreeViewItem>
+
+            <!-- Раздел "Пациенты" -->
+            <TreeViewItem Header="Раздел 'Пациенты'"/>
+
+            <!-- Раздел "Организация медицинских учреждений" -->
+            <TreeViewItem Header="Раздел 'Организация медицинских учреждений' содержит следующие подразделы:" IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Медицинское учреждение'"/>
+                <TreeViewItem Header="Подраздел 'Корпуса'"/>
+                <TreeViewItem Header="Подраздел 'Отделения'"/>
+                <TreeViewItem Header="Подраздел 'Палаты'"/>
+            </TreeViewItem>
+
+            <!-- Раздел "Сотрудники" -->
+            <TreeViewItem Header="Раздел 'Сотрудники' содержит следующие подразделы:" IsExpanded="True">
+                <TreeViewItem Header="Подраздел 'Доктора'"/>
+                <TreeViewItem Header="Подраздел 'Персонал'"/>
+            </TreeViewItem>
+
+            <!-- Раздел "Учёт пациентов" -->
+            <TreeViewItem Header="Раздел 'Учёт пациентов'"/>
+        </TreeView>
+    </Grid>
+</Window>

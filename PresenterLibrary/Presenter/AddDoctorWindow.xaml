@@ -1,0 +1,62 @@
+﻿<Window x:Class="PresenterLibrary.Presenter.AddDoctorWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresenterLibrary.Presenter"
+        mc:Ignorable="d"
+        Title="Добавить Врача" Height="330" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Поля ввода данных врача -->
+        <TextBlock Text="ФИО:" Grid.Row="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="NameTextBox" Grid.Row="0" Margin="100,0,0,5"/>
+
+        <TextBlock Text="Специализация:" Grid.Row="1" VerticalAlignment="Center"/>
+        <ComboBox x:Name="SpecializationComboBox" Grid.Row="1" Margin="100,0,0,5"/>
+
+        <TextBlock Text="Степень:" Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox x:Name="DegreeTextBox" Grid.Row="2" Margin="100,0,0,5"/>
+
+        <TextBlock Text="Звание:" Grid.Row="3" VerticalAlignment="Center"/>
+        <TextBox x:Name="TitleTextBox" Grid.Row="3" Margin="100,0,0,5"/>
+
+        <TextBlock Text="Место работы:" Grid.Row="4" VerticalAlignment="Center"/>
+        <ComboBox x:Name="HospitalClinicComboBox" Grid.Row="4" Margin="100,0,0,5"/>
+
+        <TextBlock Text="Количество операций:" Grid.Row="5" VerticalAlignment="Center"/>
+        <TextBox x:Name="OperationCountTextBox" Grid.Row="5" Margin="200,0,0,5"/>
+
+        <TextBlock Text="Операции со смертным исходом:" Grid.Row="6" VerticalAlignment="Center"/>
+        <TextBox x:Name="OperationDeathCountTextBox" Grid.Row="6" Margin="200,0,0,5"/>
+
+        <TextBlock Text="Коэффициент за вредные условия:" Grid.Row="7" VerticalAlignment="Center"/>
+        <TextBox x:Name="HazardousWorkAllowanceTextBox" Grid.Row="7" Margin="200,0,0,5"/>
+
+        <TextBlock Text="Дни отпуска:" Grid.Row="8" VerticalAlignment="Center"/>
+        <TextBox x:Name="VacationDaysTextBox" Grid.Row="8" Margin="100,0,0,5"/>
+
+        <CheckBox x:Name="IsConsultantCheckBox" Content="Консультирует" Grid.Row="9" VerticalAlignment="Center" Margin="100,0,0,5"/>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="10" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <Button Content="Сохранить" Width="100"  Click="SaveButton_Click" Margin="0,0,200,0"/>
+            <Button Content="Отмена" Width="100" Click="CancelButton_Click" Margin="0,0,50,0"/>
+        </StackPanel>
+    </Grid>
+
+</Window>

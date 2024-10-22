@@ -1,0 +1,41 @@
+﻿<Window x:Class="PresenterLibrary.Presenter.AddWindowWard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresenterLibrary.Presenter"
+        mc:Ignorable="d"
+        Title="Добавить палату" Height="220" Width="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Номер палаты -->
+        <Label Content="Номер палаты:" Grid.Row="0" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="NumberTextBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+        <!-- Количество коек -->
+        <Label Content="Количество коек:" Grid.Row="1" Grid.Column="0" Margin="5"/>
+        <TextBox x:Name="BedCountTextBox" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <!-- Отделение -->
+        <Label Content="Отделение:" Grid.Row="2" Grid.Column="0" Margin="5"/>
+        <ComboBox x:Name="DepartmentComboBox" Grid.Row="2" Grid.Column="1" Margin="5" />
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button Content="Сохранить" Width="100" Margin="15" Click="SaveButton_Click"/>
+            <Button Content="Отмена" Width="100" Margin="15" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

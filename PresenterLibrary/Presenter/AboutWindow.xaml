@@ -1,0 +1,31 @@
+﻿<Window x:Class="Tools.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tools"
+        mc:Ignorable="d"
+        Title="О программе" Height="450" Width="800">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="747*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Margin="29,38,29,35" Background="White" Grid.ColumnSpan="2">
+            <TextBlock Height="32" HorizontalAlignment="Left" Margin="10,28,0,0" Text="Курсовая работа по дисциплине Базы данных" VerticalAlignment="Top" FontSize="20" FontStretch="Normal" />
+            <TextBlock Height="32" HorizontalAlignment="Left" Margin="10,58,0,0" Text="Выполнил студент 3 курса группы АП-126 Габбасова Тайя Нурлановна" VerticalAlignment="Top" FontSize="20" FontStretch="Normal" />
+            <TextBlock HorizontalAlignment="Left" Margin="10,108,28,0" Text="" VerticalAlignment="Top" FontSize="18" FontStretch="Normal"  >
+                Данная программа является программой для работы с базой данных <LineBreak/>Медицинских организаций города на базе SQLite
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="10,178,28,0" Text="" VerticalAlignment="Top" FontSize="18" FontStretch="Normal"  >
+                Лицензия: бесплатная программа для некоммерческого использования
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="10,228,28,0" Text="" VerticalAlignment="Top" FontSize="18" FontStretch="Normal"  >
+                Автор: Габбасова Тайя Нурлановна
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Left" Margin="10,278,28,0" Text="" VerticalAlignment="Top" FontSize="18" FontStretch="Normal"  >
+                2023 г.
+            </TextBlock>
+        </Grid>
+    </Grid>
+</Window>

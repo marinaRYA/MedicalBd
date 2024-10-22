@@ -1,0 +1,48 @@
+﻿<Window x:Class="PresenterLibrary.Presenter.AddWindowSurgery"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresenterLibrary.Presenter"
+        mc:Ignorable="d"
+        Title="Добавить операцию" Height="320" Width="320">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Название:" VerticalAlignment="Center" Margin="5"/>
+        <TextBox x:Name="NameTextBox" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="ФИО Пациента:" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="PatientNameComboBox" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="ФИО Доктора:" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="DoctorNameComboBox" Grid.Row="2" Grid.Column="1" Margin="5"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Больница:" VerticalAlignment="Center" Margin="5"/>
+        <ComboBox x:Name="HospitalNameComboBox" Grid.Row="3" Grid.Column="1" Margin="5"/>
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Дата:" VerticalAlignment="Center" Margin="5"/>
+        <DatePicker x:Name="DateTextBox" Grid.Row="4" Grid.Column="1" Margin="5"/>
+
+        <Label Grid.Row="5" Grid.Column="0" Content="Исход:" VerticalAlignment="Center" Margin="5"/>
+        <TextBox x:Name="OutcomeTextBox" Grid.Row="5" Grid.Column="1" Margin="5"/>
+
+        <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <Button x:Name="SaveButton" Content="Сохранить" Width="75" Margin="0,15,100,15" Click="SaveButton_Click" Height="30"/>
+            <Button x:Name="CancelButton" Content="Отмена" Width="75" Margin="0,15,10,15" Click="CancelButton_Click" Height="30"/>
+        </StackPanel>
+    </Grid>
+</Window>
